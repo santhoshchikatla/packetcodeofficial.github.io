@@ -1,0 +1,409 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color:#000000 ;
+    box-sizing: border-box;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.header{
+    min-width: 100%;
+    min-height: 100vh;
+    position: relative;
+    backdrop-filter: blur(10px);
+    overflow-x: hidden;
+    overflow-y: hidden;
+    margin-bottom: 50px;
+}
+
+.header nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    position: absolute;
+    align-items: center;
+}
+.logo{
+   font-size: 70px;
+   color: #6779A5;
+   padding-left: 10px;
+}
+.nav-links ul {
+   
+    display: flex;
+    
+}
+.nav-links ul li a{
+padding: 5px 30px;
+color: #6779A5;
+font-weight: 600;
+cursor: pointer;
+}
+.header video{
+    position: absolute;
+  top: 0;
+    right: 0;
+    width: 100%;  
+    z-index:-1 ;
+  
+    
+    
+}
+
+
+  
+
+.text-box{
+   width: 90%;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%,-50%);
+   text-align: center;
+}
+.text-box h1{
+    font-size: 70px;
+    font-weight: 600;
+    color:#6779A5;
+    padding-bottom: 20px;
+    transition: 0.5s;
+    
+}
+.text-box h1:hover{
+    -webkit-text-stroke: 2px #6779A5;
+       color: transparent;
+       font-size:80px ;
+}
+
+.text-box p{
+    color: #E2E5F0;
+    font-weight: 400;
+    padding-bottom: 20px;
+    font-size: 20px;
+}
+.text-box a button{
+    padding: 20px 30px;
+    font-weight: 500;
+    font-size: 20px;
+    border: 2px solid antiquewhite;
+    border-radius:50px;
+    background: transparent;
+    color: #E2E5F0;
+    transition: 0.5s;
+    
+}
+.text-box a button:hover{
+    border: 2px solid#6779A5;
+    color: #6779A5;
+}
+@media(max-width:700px){
+    .header video{
+        position: absolute;
+        top: 0;
+        right: 0;
+        
+        width: 100%; 
+        height: 100vh; 
+        z-index:-1 ;
+        
+        
+    }
+    .text-box h1{
+        font-size: 35px;
+    }
+    .text-box p{
+        font-size: 14px;
+    }
+    
+    
+}
+
+/*  techniques */
+.techniques{
+    text-align: center;
+    padding: 10px;
+   position: relative;
+   
+
+}
+.techniques h1{
+    font-size: 50px;
+    font-weight: 600;
+    padding:2px 0px;
+    color: #6779A5;
+}
+.line{
+    width: 60%;
+    height: 2px;
+    border-radius: 50px;
+    background: red;
+    position: absolute;
+    left: 20%;
+    top: 150px;
+    margin-bottom: 100px;
+}
+
+
+.techniques p{
+font-size: 20px;
+color: #E2E5F0;
+padding-bottom: 20px;
+transition: 0.5s;
+}
+.techniques p:hover{
+    font-size: 25px;
+}
+.row{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    justify-content: space-between;
+   
+}
+.techniques-col{
+   border: 2px solid #6779A5;
+   border-radius: 50px;
+width: 45%;
+padding: 15px;
+transition: 0.5s;
+}
+
+.techniques-col img{
+    width: 100%;
+    border-radius: 50px;
+    opacity: 0.7;
+}
+.techniques-col img:hover{
+    opacity: 1;
+}
+.techniques-col h2{
+    font-weight: 600;
+    color:#6779A5;
+}
+
+@media(max-width:700px){
+    .techniques h1{
+        font-size: 25px;
+    }
+    .line{
+        top: 95px;
+    }
+    .row{
+        display: block;
+    }
+    .techniques-col{
+        width: 100%;
+        margin: 10px;
+    }
+}
+
+/* species */
+.species{
+    
+    text-align: center;
+    position:relative;
+}
+.species h1{
+    font-size: 50px;
+    font-weight: 600;
+    padding:20px 0px;
+    color: #6779A5;
+    margin-bottom: 100px;
+    background: #303030;
+    border: 2px solid #6779A5;
+    border-radius: 50px;
+   
+    
+}
+
+.species-chords{
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+    border:2px solid #6779A5 ;
+    border-radius: 50px;
+    padding: 10px;
+    position:relative;
+    margin-top: 5px;
+}
+.species-chords h2{
+    display: inline-block;
+    position: absolute;
+    left: 5%;
+    top: 30%;
+    font-size: 40px;
+    font-weight: 600;
+    color: #E2E5F0;
+}
+.species-chords img{
+    width: 40%;
+    height: 30vh;
+    border-radius: 50px;
+    opacity: 0.5;
+}
+.species-chords img:hover{
+    opacity: 1;
+}
+.species-chords p{
+    position: absolute;
+    right: 3%;
+    top: 40%;
+    font-size: 20px;
+    color: #E2E5F0;
+}
+.species-chords a button{
+    padding: 20px 30px;
+    font-weight: 500;
+    font-size: 20px;
+    border: 2px solid antiquewhite;
+    border-radius:50px;
+    background: transparent;
+    color: #E2E5F0;
+    transition: 0.5s;
+    
+}
+.species-chords a button:hover{
+    border: 2px solid#6779A5;
+    color: #6779A5;
+}
+@media(max-width:700px){
+    .species-chords h2{
+        width: 250px;
+        position: absolute;
+        top: 0;
+        left: 55%;
+       
+    }
+    .species h1{
+        font-size: 30px;
+    }
+    
+}
+
+/* water-parameters */
+.water-parameters{
+    
+    text-align: center;
+    padding: 10px;
+    margin-top: 10%;
+    
+    transition: 0.5s;
+}
+
+.water-parameters h1{
+    font-size: 50px;
+    font-weight: 600;
+    padding:20px 20px;
+    color: #6779A5;
+    
+}
+.par-row{
+    width: 80%;
+    margin: auto;
+   padding-top: 10px;
+    display: flex;
+    border-radius: 50px;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(images/water.jpg);;
+    background-size: cover;
+    background-position: center;
+    align-content: center;
+}
+.par-col{
+    
+    width: 100%;
+    margin-bottom: 100px;
+    transition: 0.5s;
+}
+
+.par-col p{
+    font-size:20px;
+    padding-top: 14px;
+    color: #E2E5F0;
+    
+    
+}
+.par-col h3{
+    color: #E2E5F0;
+    padding: 10px;
+font-size: 20px;
+}
+
+/* footer */
+
+.footer{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+.footer h4{
+        padding: 20px 0;
+        color: #6779A5;
+}
+
+.footer p{
+    color: #E2E5F0;
+}
+.footer-icon i {
+    margin-top: 30px;
+    display: inline;
+    width: 20px;
+    height: 20px;
+    padding: 5px;
+    cursor: pointer;
+    color: #E2E5F0;
+}
+
+/*explore*/
+.explore{
+    width: 100%;
+    
+}
+.explore nav{
+    
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+       
+        align-items: center;
+    
+}
+.text{
+    text-align: center;
+    width: 80%;
+    margin: auto;
+    padding: 5px;
+}
+.text h1{
+    color: #6779A5;
+    text-align: center;
+    font-size: 40px;
+}
+.text p{
+    color: #E2E5F0;
+    font-size: 20px;
+    
+}
+.text video{
+    width: 80%;
+    height: 40vh;
+    padding: 20px;
+    border-radius: 50px;
+}
+.matter{
+    width: 70%;
+    margin: auto;
+    text-align: left;
+}
+
+
+
+
